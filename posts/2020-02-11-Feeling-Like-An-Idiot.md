@@ -2,8 +2,8 @@
 
 category: Personal
 title: Feeling Like An Idiot
-header-image: /images/Feeling-Like-An-Idiot/nick-fewings-1iesvNXsuZs-unsplash.jpg
-header-alt: A neon sign which reads "No stupid people beyond this point" - Photo by Nick Fewings on Unsplash
+headerImage: /images/Feeling-Like-An-Idiot/nick-fewings-1iesvNXsuZs-unsplash.jpg
+headerAlt: A neon sign which reads "No stupid people beyond this point" - Photo by Nick Fewings on Unsplash
 summary: Christmas Eve marked the six month anniversary of my first real-world job since I graduated from the University of Dundee last May. That time has been more information dense than the four year course that lead me to the job. I was under no disillusions that a degree was going teach me everything I had to know about entering the industry but I never expected to spend many days feeling like an idiot.
 ---
 

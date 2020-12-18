@@ -1,8 +1,8 @@
 ---
 
 title: Being a Hackathon Particpant
-header-image: /images/HackathonParticpant/HackathonPlaybookParticipantTitle.jpg
-header-alt: My Hackathon team at RGUHack in 2018
+headerImage: /images/HackathonParticpant/HackathonPlaybookParticipantTitle.jpg
+headerAlt: My Hackathon team at RGUHack in 2018
 category: Hackathon Playbook
 summary: I've been very fortunate to be involved in local hackathon community as a student and well into my full time graduate job. I've been able to act as an organiser, a participant and as a corporate sponsor. In this three part series I'm documenting some of the steps and processes I go through to contribute to that community. In part one, I'm discussing how I've been a participant and how I've taken on challenges across Scotland and Europe.
 ---

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }} | Conor Haining</title>
+	<link rel="stylesheet" type="text/css" href="/assets/main.css" />
+</head>
+
+<body class="post">
+	{% include 'header.njk' %}
+
+	<main class="py-4 px-6 flex flex-col items-center w-100">
+		<h1 class="text-4xl my-4 font-semibold underline">{{ title }}</h1>
+		<article class="border-b pb-8 mt-8 text-xl max-w-prose text-justify bg-white p-8 mb-8 rounded shadow-lg">
+            {{ content | safe }}
+		</article>
+	</main>
+
+	<script src="/assets/main.js"></script>
+</body>
+
+</html>

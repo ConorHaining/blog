@@ -2,8 +2,8 @@
 
 category: Trip Report
 title: VivaTech 2018 Notes & Thoughts
-header-image: /images/IMG_20180524_174152.jpg
-header-alt: Welcome to VIVA Tech 2018
+headerImage: /images/IMG_20180524_174152.jpg
+headerAlt: Welcome to VIVA Tech 2018
 ---
 VivaTech, an annual technology &amp; innovation conference in its third year, is billed as _"the world’s rendezvous for startups and leaders to celebrate innovation"_. Held in Paris, this week it attracted 80000 attendees, 8000 European startups and dozens of large players in technology across Europe. It also featured talks from Facebook’s Mark Zuckerberg, Microsoft's Satya Nadella, and IBM's Ginni Rometty amongst many, many more. 
 I decided to attend VivaTech to explore the wide range of industries and technologies on display. As I am graduating next year, the event gave me an opportunity to look into possible career paths as well as gain an insight into the direction that the industry is moving as a whole. Although VivaTech was more business-oriented, it also featured talks and workshops by senior engineers in the field. This mix allowed me to gain both a high-level overview of upcoming technologies, but also a more detailed insight into the lives and work of people those in these areas.
