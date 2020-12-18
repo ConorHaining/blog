@@ -20,7 +20,7 @@
 				{% if post.data.summary %}
 					{{ post.data.summary }}
 				{% else %}
-					{{ post.templateContent | truncate(60) }}
+					{{ post.templateContent | truncate(60) | safe }}
 				{% endif %}
 			</div>
 			<img src="assets/{{ post.data.headerImage }}" alt="{{ post.data.headerAlt }}" loading="lazy" class="object-cover w-full h-full hidden md:block" />
