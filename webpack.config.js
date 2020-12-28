@@ -10,11 +10,6 @@ module.exports = {
     },
     plugins: [
       new MiniCssExtractPlugin(),
-      new CopyPlugin({
-        patterns: [
-          { from: 'images', to: 'images' }
-        ]
-      })],
     module: {
       rules: [
         {

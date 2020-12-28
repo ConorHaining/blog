@@ -1,29 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
 	<title>Conor Haining</title>
-	<link rel="stylesheet" type="text/css" href="/assets/main.css" />
+	{% include 'head.njk' %}
 </head>
 
 <body class="bg-gray-50">
 	{% include 'header-tall.njk' %}
 
-	<main class="py-4 px-6 md:px-12 ld:px-32 xl:px-48">
+	<main class="mx-auto px-4 max-w-prose">
 		{% for post in collections.posts | reverse %}
-		<article class="bg-white p-8 mb-8 rounded shadow-md grid grid-col-2 auto-rows-max">
-			<div class="col-start-1 col-span-2 row-span-1">
-				<h2 class="text-3xl font-bold hover:underline hover:text-gray-700"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-				<time datetime="{{ post.date }}"><em class="text-red-400 leading-loose">{{ post.date | displayDate }}</em></time>
-			</div>
-			<div class="py-4 pr-8 text-justify text-xl col-span-2 md:col-span-1">
-				{% if post.data.summary %}
-					{{ post.data.summary }}
-				{% else %}
-					{{ post.templateContent | truncate(60) | safe }}
-				{% endif %}
-			</div>
-			<img src="assets/{{ post.data.headerImage }}" alt="{{ post.data.headerAlt }}" loading="lazy" class="object-cover w-full h-full hidden md:block" />
+		<article class="my-2">
+			<h2 class="text-xl font-bold hover:underline hover:text-gray-700"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+			<time datetime="{{ post.date }}"><em class="text-red-400 leading-loose">{{ post.date | displayDate }}</em></time>
 		</article>
 		{% endfor %}
 	</main>

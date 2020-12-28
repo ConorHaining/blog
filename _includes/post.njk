@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	
 	<title>{{ title }} | Conor Haining</title>
-	<link rel="stylesheet" type="text/css" href="/assets/main.css" />
+
+	{% include 'head.njk' %}
 </head>
 
 <body class="post">
 	{% include 'header.njk' %}
 
 	<main class="py-4 px-6 flex flex-col items-center w-100">
-		<h1 class="text-4xl my-4 font-semibold underline">{{ title }}</h1>
-		<article class="border-b pb-8 mt-8 text-xl max-w-prose text-justify bg-white p-8 mb-8 rounded shadow-lg">
+		<article class="border-b pb-8 mt-8 text-xl prose max-w-prose leading-loose">
+			<div class="mb-3">
+				<h1 class="text-3xl mt-2 font-semibold">{{ title }}</h1>
+				<time datetime="{{ page.date }}"><em class="text-red-400 leading-loose">{{ page.date | displayDate }}</em></time>
+			</div>
             {{ content | safe }}
 		</article>
 	</main>

@@ -7,5 +7,10 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  corePlugins: {
+    listStyleType: false,
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
