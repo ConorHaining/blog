@@ -4,5 +4,5 @@
 
 header {
     @apply bg-purple-800;
-    /* background-image: url('topography.svg'); */
+    background-image: url('topography.svg');
 }
