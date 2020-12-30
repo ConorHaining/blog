@@ -2,8 +2,7 @@
 title: Attempting to simulate the software industry for students
 headerImage: /images/video-calls.jpg
 headerAlt: An irrelevant stock image showing a load of video calls
-category: Tech
-summary: I was recently acting as the client to around 100 University of Dundee students, who work intensely for three weeks at the beginning of their final year of undergraduate study in order to refine and extend their knowledge on the software development process. Having previously taken this class as a student, I was very keen to pass on the knowledge and skills I have acquired since I graduated onto the students I would be working with.
+date: 2020-10-26
 ---
 
 I was recently acting as the client to around 100 University of Dundee students, who work intensely for three weeks at the beginning of their final year of undergraduate study in order to refine and extend their knowledge on the software development process. Having previously taken this class as a student, I was very keen to pass on the knowledge and skills I have acquired since I graduated onto the students I would be working with.

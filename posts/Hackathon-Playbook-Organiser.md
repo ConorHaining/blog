@@ -1,10 +1,8 @@
 ---
-
 title: Organising your Hackathon
 headerImage: /images/IMG_3139.JPG
 headerAlt: Flying the University of Dundee flag while at GUTS 2018
-category: Hackathon Playbook
-summary: Organising a hackthon is a very challenging and stress undertaking. There are many people, scenarios, and options that all need careful consideration. In part 2, we're looking at my experience as an organiser mixed in with how I've observed other events handle those same problems.
+date: 2020-06-16
 ---
 
 Organising a hackthon is a very challenging and stress undertaking. There are many people, scenarios, and options that all demand careful consideration. In part 2, we're looking at my experience as an organiser mixed in with how I have observed other events tackling those same problems. [I've written about the one hackathon I've been involved in organising in the past](https://conorhaining.com/posts/Dundees-Hackathon/) shortly after it was all over and I took a lot away from that experience so I was able to understand the choices that I've seen being made on how to orchestrate other events.

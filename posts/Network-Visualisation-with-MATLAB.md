@@ -1,6 +1,6 @@
 ---
-category: Tech
 title: Network Visualisation with MATLAB
+date: 2017-03-28
 ---
 
 For a recent university project we were analysing large networks. We used the [Standford Network Analysis Project (SNAP)](http://snap.stanford.edu) to perform a number of operations on any [dataset](http://snap.stanford.edu/data/index.html) we wanted. We searched for a large dataset as we believed it could yeild some pretty interesting results. We settled on the [California Road Network](http://snap.stanford.edu/data/roadNet-CA.html) where nodes represent either an intersection, or end point (dead end) and the edges represent the roads between them. The website states that this is an undirected edge but we found during the visualisation that there is infact directed edges.

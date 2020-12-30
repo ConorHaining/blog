@@ -1,10 +1,8 @@
 ---
-
-category: Personal
 title: Chatting with.. by Rachel Menzies
 headerImage: /images/YoutubeTitleCard.jpg
 headerAlt: Chatting with.. Conor Haining by Rachel Menzies
-summary: I recently spoke to Rachel Menzies as part of her Chatting With.. podcast series to discuss hackathons, organising events and working in a team. You can check it out inside the post.
+date: 2020-07-27
 ---
 
 <div id="video-wrapper">

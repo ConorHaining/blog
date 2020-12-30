@@ -1,10 +1,8 @@
 ---
-
 title: Microsoft Build 2020 Notes
 headerImage: /images/MSBuild2020/Microsoft-Build-2020-Microsoft.jpg
 headerAlt: The MS Build 2020 remote event pass
-category: Conference Notes
-summary: Build is the annual developer conference held each year by Microsoft in downtown Seattle with tickets being usually highly sought for and run into a few thousand dollars for the privilege of attending. The 2020 event was forced to go online and was to be broadcast across 3 days free of charge. Following Satya Nadella's opening address, the keynote was led by Scott Handselman and friends and was titled "Every developer is welcome".
+date: 2020-05-27
 ---
 
 Build is the annual developer conference held each year by Microsoft in downtown Seattle with tickets being usually highly sought for and run into a few thousand dollars for the privilege of attending. The 2020 event was forced to go online and was to be broadcast across 3 days free of charge. Following Satya Nadella's opening address, the keynote was led by Scott Handselman and friends and was titled "Every developer is welcome". Microsoft have made many moves in the past few years to become more integral to the working lives of developers; their acquisition of Github, the increasingly closer relationship with Linux, and their presence in the development lifecycle for many developers. If developer tooling and productivity are to be one of the main strategies of Microsoft and if every developer truly is welcome, Build needs to be accessible to all in the same manner it was this year.

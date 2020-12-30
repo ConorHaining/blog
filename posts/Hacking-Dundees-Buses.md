@@ -1,7 +1,6 @@
 ---
-
-category: Tech
 title: Hacking Dundee's Buses
+date: 2017-10-22
 ---
 
 I have been looking for an excuse to learn and use Python, and I always find the best way for me to learn is to tackle something in a small project. I have also recently become very interested in real-time travel information for public transport. Most cities and countries offer real-time arrival and departure information for busses, trains and mass transit (trams, underground, light rail) and where I live and study in [Dundee](https://www.google.co.uk/maps/search/Dundee,Scotland?hl=en&source=opensearch) is no different.
