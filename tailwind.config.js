@@ -13,7 +13,6 @@ module.exports = {
     extend: {},
   },
   corePlugins: {
-    listStyleType: false,
   },
   plugins: [
     require('@tailwindcss/typography')

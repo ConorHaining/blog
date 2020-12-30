@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Conor Haining</title>
-	<link rel="stylesheet" type="text/css" href="/assets/main.css" />
+	{% include 'head.njk' %}
 </head>
 
 <body class="diary">
@@ -16,14 +16,14 @@
 		<p></p>
 
 		{% set navPages = collections.all | eleventyNavigation %}
-		<ul class="text-lg">
+		<ul class="text-lg list-disc">
 		{%- for entry in navPages %}
 		<li>
 			{{ entry.title }}
 		</li>
 
 			{% if entry.children %}
-				<ul>
+				<ul class="list-disc pl-4">
 				{%- for entry in entry.children %}
 					<li>
 						<a href="{{ entry.url | url }}" class="text-blue-700 underline">{{ entry.title }}</a>

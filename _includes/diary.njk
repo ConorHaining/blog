@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Conor Haining</title>
-	<link rel="stylesheet" type="text/css" href="/assets/main.css" />
+	{% include 'head.njk' %}
 </head>
 
-<body class="diary">
+<body>
 	{% include 'header.njk' %}
 
 	<main class="list-disc py-4 px-6 md:px-12 ld:px-32 xl:px-48">
 		<h1 class="text-5xl">{{ title }}</h1>
 		
-		<article>
+		<article class="prose">
 			{{ content | safe }}
 		</article>
 
