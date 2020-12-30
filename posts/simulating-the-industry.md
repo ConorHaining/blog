@@ -6,6 +6,7 @@ date: 2020-10-26
 ---
 
 I was recently acting as the client to around 100 University of Dundee students, who work intensely for three weeks at the beginning of their final year of undergraduate study in order to refine and extend their knowledge on the software development process. Having previously taken this class as a student, I was very keen to pass on the knowledge and skills I have acquired since I graduated onto the students I would be working with.
+---
 
 This was not without its challenges and my own concerns. I believe it’s hard to offer a truly authentic simulation of the industry: it's hard to simulate a company's culture, mission, or bureaucracy without inserting bias into peoples perceptions of the industry and it also varies widely between organizations. My mental approach here is to pretend they are working at Conor Inc, where I get to decide these things. I had a personal goal to inject some of the knowledge I wish I had when I started working full-time.
 

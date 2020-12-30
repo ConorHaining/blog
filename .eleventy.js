@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
   
   eleventyConfig.addPassthroughCopy({ "./styles/topography.svg": "./topography.svg" });
+  eleventyConfig.addPassthroughCopy({ "./favicon.ico": "./favicon.ico" });
 
   eleventyConfig.addFilter('displayDate', (date) => {
     return date.toDateString();
@@ -22,6 +23,10 @@ module.exports = function (eleventyConfig) {
     return [
       ...collection.getFilteredByGlob('./posts/*.md').filter(livePosts)
     ].reverse();
+  });
+
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
   });
 
 };

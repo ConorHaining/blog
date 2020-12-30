@@ -1,4 +1,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
+
+<meta name="author" content="Conor Haining">
+
+<meta name="theme-color" content="#5b21b6">
+
 <link rel="stylesheet" type="text/css" href="/style.css" />
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
+<link rel="alternate" type="application/rss+xml" title="Conor Haining's blog" href="/feed.xml">
+
+{% if title %}
+<title>{{ title }} | Conor Haining</title>
+<meta name="title" content="{{ title }} | Conor Haining">
+{% else %}
+<title>Conor Haining</title>
+<meta name="title" content="Conor Haining">
+{% endif %}
+
+  {% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://conorhaining.com{{ absolutePostUrl }}">
+{% if title %}
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ page.excerpt }}">
+<meta property="og:image" content="https://conorhaining.com{{ headerImage }}">
+<meta property="og:image:alt" content="{{ headerAlt }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://conorhaining.com{{ absolutePostUrl }}">
+<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:description" content="{{ page.excerpt }}">
+<meta property="twitter:image" content="https://conorhaining.com{{ headerImage }}">
+<meta property="twitter:image:alt" content="{{ headerAlt }}">
+{% endif %}
