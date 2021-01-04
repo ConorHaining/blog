@@ -4,7 +4,7 @@ date: 2021-01-04
 ---
 
 ## Summary
-I don't have anything new or original for comment on 2020, so I won't. However I'm sharing some of my favourite reads from last year and a few details on my new blog and it's design.
+I don't have anything new or original for comment on 2020, so I won't. However I'm sharing some of my favourite reads from last year and a few details on my new blog and its design.
 
 ## Favourite reads from 2020
 I spent much more time in Spring reading because *gestures broadly* I had a lot more free time. For me this tended to be books in Spring but over the rest of the year I found myself reading more technology and software articles with the help of [Pocket](https://getpocket.com/). Here's a quick list of what I've enjoyed:
@@ -34,6 +34,6 @@ I liked Jekyll because it is a static site generator meaning that it take my mar
 
 This new blog uses [Eleventy](https://www.11ty.dev/), a static site generator built with JavaScript and  the theme was made by me with the help of the [Tailwind CSS](https://tailwindcss.com/) framework. I've used Tailwind on a number of projects recently, including [LitPaths](https://litpaths.app) and I'm a huge fan of the utility-first approach to CSS - but I have yet to see how that scales with multiple people & teams in a larger system.
 
-I've kept the design largely the same with the tall purple header on the homepage but I've changed the background from a texture to map contours. This is done with an SVG background, and will fall back to just purple when [SVG backgrounds are not supported](https://caniuse.com/svg-css). As an aside, I didn't find the CSS generated on the website like the best solution because it really floats the size of the file which is to be download by the browser. I instead downloaded the SVG, cut it in half (since I do not need to cover a large area) and ran it through [SVGOMG](https://jakearchibald.github.io/svgomg/) which reduced it's size by half.
+I've kept the design largely the same with the tall purple header on the homepage but I've changed the background from a texture to map contours. This is done with an SVG background, and will fall back to just purple when [SVG backgrounds are not supported](https://caniuse.com/svg-css). As an aside, I didn't find the CSS generated on the website like the best solution because it really floats the size of the file which is to be download by the browser. I instead downloaded the SVG, cut it in half (since I do not need to cover a large area) and ran it through [SVGOMG](https://jakearchibald.github.io/svgomg/) which reduced its size by half.
 
 I've also removed the summary & header images for each post from the homepage and turned it into a list of headlines & published date. My analytics indicate that most people appear on this blog directly from either my LinkedIn or Twitter, so I don't want to waste unnecessary bytes on something that doesn't add a lot of value.
