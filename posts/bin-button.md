@@ -1,6 +1,7 @@
 ---
 title: The Bin Button
 date: 2021-02-15
+headerImage: /images/bins/lorry.jpg
 ---
 
 !["A full recycling bin near my flat"](../../images/bins/bin.jpg)
