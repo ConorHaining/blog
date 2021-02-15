@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./_tmp/style.css");
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
   
-  // eleventyConfig.addPassthroughCopy({ "./styles/**.svg": "./" });
+  eleventyConfig.addPassthroughCopy({ "./styles/**.svg": "./" });
   eleventyConfig.addPassthroughCopy({ "./favicon.ico": "./favicon.ico" });
   eleventyConfig.addPassthroughCopy({ "./images": "./images" });
 
