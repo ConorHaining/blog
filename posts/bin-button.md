@@ -1,5 +1,5 @@
 ---
-title: My bin button
+title: The Bin Button
 date: 2021-02-15
 ---
 
