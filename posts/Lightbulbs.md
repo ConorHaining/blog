@@ -1,6 +1,7 @@
 ---
 title: Thinking about Lightbulbs
 date: 2023-01-10
+draft: true
 ---
 
 I’m often in awe at the people who I see who from the outside just seem to be capable everything. I’m talking about people who complete a limitless number of activities: they write blog posts, socialise with friends, work out multiple times a week, run business, have side projects, many other things, and still manage to work full time jobs.
