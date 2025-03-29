@@ -1,8 +1,15 @@
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const tailwindConfig = require("./tailwind.config.js");
+import path from 'path';
+import { fileURLToPath } from 'url';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import tailwindConfig from "./tailwind.config.js";
+import postcssImport from 'postcss-import';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
   entry: './scripts/main.js',
   output: {
     path: path.resolve(__dirname, '_site/assets'),
@@ -21,9 +28,9 @@ module.exports = {
             ident: 'postcss',
             syntax: 'postcss-scss',
             plugins: [
-              require('postcss-import'),
-              require('tailwindcss')(tailwindConfig),
-              require('autoprefixer'),
+              postcssImport,
+              tailwindcss(tailwindConfig),
+              autoprefixer,
             ]
           }
         }

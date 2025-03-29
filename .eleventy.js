@@ -1,8 +1,7 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
 
@@ -28,7 +27,4 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
   });
-
-  eleventyConfig.addPlugin(UpgradeHelper);
-
-};
+}
