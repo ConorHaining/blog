@@ -7,12 +7,12 @@
 <body class="post">
 	{% include 'header.njk' %}
 
-	<main class="py-4 px-6 flex flex-col items-center w-100">
-		<article class="border-b pb-8 mt-8 text-xl prose max-w-prose leading-loose">
+	<main class="py-4 px-6 flex flex-col items-center w-full">
+		<article class="border-b pb-8 mt-8 text-l prose max-w-prose leading-loose">
 			<div class="mb-3">
 				<h1 class="text-3xl mt-2 font-semibold">{{ title }}</h1>
 				<time datetime="{{ page.date }}"><em class="text-red-400 leading-loose">{{ page.date | displayDate }}</em></time>
-				{# <span class="text-sm text-purple-800 font-semibold bg-purple-300 py-0.5 px-1 rounded">Around {{ content | readingTime }} reading time</span> #}
+				{# <span class="text-sm text-green-800 font-semibold bg-green-300 py-0.5 px-1 rounded">Around {{ content | readingTime }} reading time</span> #}
 			</div>
             {{ content | safe }}
 		</article>
