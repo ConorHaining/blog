@@ -1,11 +1,5 @@
 module.exports = {
-  purge: {
-    content: ["_site/**/*.html"],
-    options: {
-      whitelist: [],
-    },
-  },
-  darkMode: false, // or 'media' or 'class'
+  content: ["_site/**/*.html"],
   theme: {
     extend: {
       typography: {
@@ -33,9 +27,6 @@ module.exports = {
         }
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   corePlugins: {
   },
