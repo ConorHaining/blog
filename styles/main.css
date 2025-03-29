@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 header {
-    @apply bg-purple-800;
+    @apply bg-green-800;
     background-image: url('topography.svg');
 }
 
