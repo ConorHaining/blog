@@ -2,6 +2,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 // const readingTime = require('eleventy-plugin-reading-time');
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -31,5 +32,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
   });
+
+  eleventyConfig.addPlugin(UpgradeHelper);
 
 };
