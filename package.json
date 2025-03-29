@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve & npx @tailwindcss/cli -i ./styles/main.css -o ./_tmp/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss styles/main.css --o _site/style.css"
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production npx @tailwindcss/cli -i ./styles/main.css -o ./_tmp/style.css"
   },
   "keywords": [],
   "author": "",
