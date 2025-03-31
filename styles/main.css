@@ -6,6 +6,13 @@ header {
     background-image: url('topography.svg');
 }
 
+@media screen and (prefers-color-scheme: dark) {
+    header {
+        @apply bg-gray-800;
+    }
+    
+}
+
 body {
     @apply mb-8;
 }
