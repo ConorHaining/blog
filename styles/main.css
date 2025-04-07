@@ -2,17 +2,88 @@
 @plugin "@tailwindcss/typography";
 
 header {
-    @apply bg-green-800;
+    @apply bg-green-800 flex justify-between text-white h-18 items-center py-2;
     background-image: url('topography.svg');
+}
+
+header.tall {
+    @apply h-64 py-8;
 }
 
 @media screen and (prefers-color-scheme: dark) {
     header {
         @apply bg-gray-800;
     }
-    
+
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+@keyframes move-out {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+::view-transition-old(slide-in) {
+    animation: 0.4s ease-in-out both move-out;
+}
+
+::view-transition-new(slide-in) {
+    animation: 0.4s ease-in-out both move-in;
+}
+
+@keyframes shrink {
+    from {
+        height: calc(var(--spacing) * 64);
+    }
+
+    to {
+        height: calc(var(--spacing) * 18);
+    }
+}
+
+@keyframes grow {
+    from {
+        height: calc(var(--spacing) * 18);
+    }
+
+    to {
+        height: calc(var(--spacing) * 64);
+    }
+}
+
+::view-transition-old(contract) {
+    animation: 0.2s ease-in-out both shrink;
+}
+::view-transition-new(contract) {
+    animation: 0.2s ease-in-out both grow;
 }
 
 body {
     @apply mb-8;
+}
+
+.homepage main {
+    view-transition-name: slide-in;
+}
+
+.homepage header {
+    view-transition-name: contract;
 }
