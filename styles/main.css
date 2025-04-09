@@ -1,16 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-header {
-    @apply bg-green-800 flex justify-between text-white h-18 items-center py-2;
-    background-image: url('topography.svg');
-}
 
-header.tall {
-    @apply h-64 py-8;
-}
-
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) {
     header {
         @apply bg-gray-800;
     }
@@ -69,21 +61,74 @@ header.tall {
     }
 }
 
-::view-transition-old(contract) {
+/* ::view-transition-old(contract) {
     animation: 0.2s ease-in-out both shrink;
 }
 ::view-transition-new(contract) {
     animation: 0.2s ease-in-out both grow;
-}
+} */ */
 
 body {
     @apply mb-8;
 }
 
-.homepage main {
-    view-transition-name: slide-in;
+header {
+    @apply bg-green-800 flex justify-between text-white h-18 items-center py-2;
+    /* background-image: url('topography.svg'); */
 }
 
-.homepage header {
-    view-transition-name: contract;
+header.tall {
+    @apply h-64 py-8;
+}
+
+/**
+*   View Transitions
+*/
+@view-transition {
+    navigation: auto;
+}
+
+
+.post header {
+    view-transition-name: header;
+}
+
+::view-transition-old(header) {
+    animation: 0.3s ease-in-out both grow;
+    object-position: top;
+}
+::view-transition-new(header) {
+    animation: 0.3s ease-in-out both shrink;
+    object-position: top;
+}   
+
+.post header .content {
+    view-transition-name: header-content;
+}
+
+::view-transition-old(header-content),
+::view-transition-new(header-content) {
+    animation: none;
+    height: 100%;
+    object-fit: fill;
+    overflow: clip;
+}
+
+@keyframes shrink {
+    from {
+        height: calc(var(--spacing) * 64);
+    }
+
+    to {
+        height: calc(var(--spacing) * 18);
+    }
+}
+@keyframes grow {
+    from {
+        height: calc(var(--spacing) * 18);
+    }
+
+    to {
+        height: calc(var(--spacing) * 64);
+    }
 }
