@@ -73,12 +73,12 @@ body {
 }
 
 header {
-    @apply bg-green-800 flex justify-between text-white h-18 items-center py-2;
-    /* background-image: url('topography.svg'); */
+    @apply bg-green-800 flex justify-between text-white h-18 items-center py-2 px-6;
+    background-image: url('topography.svg');
 }
 
 header.tall {
-    @apply h-64 py-8;
+    @apply h-64;
 }
 
 /**
@@ -87,48 +87,37 @@ header.tall {
 @view-transition {
     navigation: auto;
 }
-
-
-.post header {
-    view-transition-name: header;
+@media (prefers-reduced-motion) {
+    @view-transition {
+        navigation: none;
+    }
 }
 
-::view-transition-old(header) {
-    animation: 0.3s ease-in-out both grow;
-    object-position: top;
-}
-::view-transition-new(header) {
-    animation: 0.3s ease-in-out both shrink;
-    object-position: top;
-}   
-
-.post header .content {
-    view-transition-name: header-content;
+.post main {
+    view-transition-name: post;
 }
 
-::view-transition-old(header-content),
-::view-transition-new(header-content) {
-    animation: none;
-    height: 100%;
-    object-fit: fill;
-    overflow: clip;
+::view-transition-old(post) {
+    animation: 0.1s ease-in-out both fade-out;
 }
-
-@keyframes shrink {
+::view-transition-new(post) {
+    animation: 0.4s ease-in-out both move-in;
+}
+@keyframes fade-out {
     from {
-        height: calc(var(--spacing) * 64);
+        opacity: 1;
     }
 
     to {
-        height: calc(var(--spacing) * 18);
+        opacity: 0;
     }
 }
-@keyframes grow {
+@keyframes move-in {
     from {
-        height: calc(var(--spacing) * 18);
+        transform: translateX(100%);
     }
 
     to {
-        height: calc(var(--spacing) * 64);
+        transform: translateX(0%);
     }
 }
