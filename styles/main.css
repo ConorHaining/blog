@@ -1,18 +1,123 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-header {
-    @apply bg-green-800;
-    background-image: url('topography.svg');
-}
 
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) {
     header {
         @apply bg-gray-800;
     }
-    
+
 }
+
+@view-transition {
+    navigation: auto;
+}
+
+@keyframes move-out {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+::view-transition-old(slide-in) {
+    animation: 0.4s ease-in-out both move-out;
+}
+
+::view-transition-new(slide-in) {
+    animation: 0.4s ease-in-out both move-in;
+}
+
+@keyframes shrink {
+    from {
+        height: calc(var(--spacing) * 64);
+    }
+
+    to {
+        height: calc(var(--spacing) * 18);
+    }
+}
+
+@keyframes grow {
+    from {
+        height: calc(var(--spacing) * 18);
+    }
+
+    to {
+        height: calc(var(--spacing) * 64);
+    }
+}
+
+/* ::view-transition-old(contract) {
+    animation: 0.2s ease-in-out both shrink;
+}
+::view-transition-new(contract) {
+    animation: 0.2s ease-in-out both grow;
+} */ */
 
 body {
     @apply mb-8;
+}
+
+header {
+    @apply bg-green-800 flex justify-between text-white h-18 items-center py-2 px-6;
+    background-image: url('topography.svg');
+}
+
+header.tall {
+    @apply h-64;
+}
+
+/**
+*   View Transitions
+*/
+@view-transition {
+    navigation: auto;
+}
+@media (prefers-reduced-motion) {
+    @view-transition {
+        navigation: none;
+    }
+}
+
+.post main {
+    view-transition-name: post;
+}
+
+::view-transition-old(post) {
+    animation: 0.1s ease-in-out both fade-out;
+}
+::view-transition-new(post) {
+    animation: 0.4s ease-in-out both move-in;
+}
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes move-in {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }

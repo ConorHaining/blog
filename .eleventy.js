@@ -1,5 +1,6 @@
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { execSync } from "child_process";
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -27,4 +28,19 @@ export default function (eleventyConfig) {
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
   });
+
+  eleventyConfig.addPlugin((eleventyConfig, pluginOptions) => {
+      
+    eleventyConfig.addShortcode("footnoteref", function(name) { return `<a href="#">x</a>` });
+  
+    }); 
+
+  // Add Tailwind CSS build on start and after changes
+  eleventyConfig.on('eleventy.before', async () => {
+    console.log('Building Tailwind CSS...');
+    execSync('npx @tailwindcss/cli -i ./styles/main.css -o ./_tmp/style.css');
+  });
+
+  // Watch the input stylesheet for changes
+  eleventyConfig.addWatchTarget('./styles/main.css');
 }
