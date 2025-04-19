@@ -97,6 +97,13 @@ header.tall {
     view-transition-name: post;
 }
 
+.post main pre {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+    max-width: 90vw;
+}
+
 ::view-transition-old(post) {
     animation: 0.1s ease-in-out both fade-out;
 }
